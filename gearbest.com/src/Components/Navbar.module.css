@@ -1,0 +1,111 @@
+.savewithappModal{  
+    align-items: center;
+    margin-right: 50px;
+   letter-spacing: 0.5px;
+   /* margin: auto; */
+   /* margin-top: 10px; */
+}
+.supportText{
+    margin-right: 50px;
+}
+.qrcodeimage{
+    width: 150px;
+    margin-left: -10px;
+}
+.appstoreimage{
+    width: 200px;
+}
+.imagedownloadsection{
+    justify-content: space-evenly;
+    align-items: center;
+}
+.downloadapptext{
+ 
+   line-height: 10px;
+   margin-left: 20px;
+  
+}
+.topLine{
+   justify-content: space-around;
+   align-items: center;
+    
+}
+.mainFlex{
+    font-size: 14px;
+    margin-left: 400px;
+   justify-content: center;
+   align-items: center;
+   margin-top: 10px;
+}
+.language{
+    margin-left: 50px;
+}
+.shippingModal{
+   align-items: center;
+}
+.logo{
+    width: 250px;
+    margin-left: 80px;
+    margin-top: 10px;
+}
+.inputPopOver{
+    margin-left: -100px;
+}
+.inputBox{
+    width: 500px;
+    margin-top: 30px;
+    border-radius: 0px;
+}
+.inputCategories{
+    margin-top: 30px;
+    margin-left: 100px;
+    padding: 7px;
+    border-top: 2px solid  #ffda00;
+    border-left: 2px solid  #ffda00;
+    border-bottom: 2px solid  #ffda00;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius:30px;
+    align-items: center;
+}
+.inputButton{
+    background-color: #ffda00;
+    margin-top: 30px;
+    padding: 8px;
+    width: 50px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.searchIcon{
+    margin: auto;
+    margin-top: 2px;
+}
+.loginIcon{
+   margin-right: 10px;
+   margin-top: 40px;
+   margin-left:30px;
+    width: 30px;
+    size: 30px;
+}
+.loginLink{
+    margin-top: 37px;
+    font-size: 15px;
+    margin-left: -8px;
+}
+/* .FavIcon{
+    margin-top: 40px;
+    margin-left: 20px;
+    size: 30px;
+    
+} */
+.favTextFlex{
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-right: 50px;
+    align-items: center;
+   
+}
+.favText{
+    font-weight: 400;
+    margin-left: 10px;
+    margin-top: -2px;
+}
