@@ -1,0 +1,75 @@
+.isActive{
+    margin: auto;
+   background-color:#ffda00 ;
+    padding: 8px;
+    width: 350px;
+    text-decoration: underline;
+}
+
+.default{
+margin: auto;
+background-color: #ffda00;
+padding: 8px;
+width: 350px;
+font-weight: bold;
+}
+.default:hover {
+    
+    text-decoration: underline 4px;
+    
+}
+.subCategories{
+    width: 238px;
+    text-align: justify;
+    margin-left: 68px;
+    line-height: 30px;
+    padding: 5px;
+    background-color: rgb(232, 241, 245);
+}
+.subCategoriesText:hover{
+    background-color: white;
+    cursor: pointer;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gridItems :hover{
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
+}
+.dataText{
+        height: 50px;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; 
+}
