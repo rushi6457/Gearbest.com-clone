@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { 
     Image, 
     Modal, 
@@ -49,9 +49,12 @@ import {FaRegUser} from "react-icons/fa"
 import {BsHeart} from "react-icons/bs"
 import {FcGoogle} from "react-icons/fc"
 import {BsCart2} from "react-icons/bs"
+import { AuthContext } from '../Context/AuthContextComponent';
 
 const Navbar = () => {
 
+    const [state,dispatch] = useContext(AuthContext)
+    console.log(state)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const initialRef = React.useRef(null)
   const finalRef = React.useRef(null)
@@ -184,9 +187,13 @@ const Navbar = () => {
             <Box className={styles.inputButton}><BsSearch className={styles.searchIcon}/></Box>
         {/* ❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌ */}
             <Menu>
-                <MenuButton><Flex alignItems='center' marginTop='30px'marginLeft='20px'  as={Text}> <FaRegUser size='25px'/>Sign In</Flex></MenuButton>
-                <MenuList width='300px'>
-                    <MenuItem>Welcome to Gearbest</MenuItem>
+                <MenuButton><Flex 
+                alignItems='center' 
+                marginTop='30px'
+                marginLeft='20px'  
+                as={Text}> <FaRegUser size='25px'/>{state.isAuth ? 'eve.holt@reqres.in' :'Sign In'}</Flex></MenuButton>
+                <MenuList zIndex={'10'} width='300px'>
+                    <MenuItem  >Welcome to Gearbest</MenuItem>
                     <Link to='/login'><Button backgroundColor=' #ffda00' width='80%'marginTop='20px' >Sign In</Button></Link>
                     <MenuItem marginTop='20px'>Or connect via <FcGoogle size='20px' marginLeft='10px'/></MenuItem>
                     <Divider/>

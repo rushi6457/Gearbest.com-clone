@@ -1,24 +1,26 @@
-.isActive{
+.isActive {
     margin: auto;
-   background-color:#ffda00 ;
+    background-color: #ffda00;
     padding: 8px;
     width: 350px;
     text-decoration: underline;
 }
 
-.default{
-margin: auto;
-background-color: #ffda00;
-padding: 8px;
-width: 350px;
-font-weight: bold;
+.default {
+    margin: auto;
+    background-color: #ffda00;
+    padding: 8px;
+    width: 350px;
+    font-weight: bold;
 }
+
 .default:hover {
-    
+
     text-decoration: underline 4px;
-    
+
 }
-.subCategories{
+
+.subCategories {
     width: 238px;
     text-align: justify;
     margin-left: 68px;
@@ -26,7 +28,8 @@ font-weight: bold;
     padding: 5px;
     background-color: rgb(232, 241, 245);
 }
-.subCategoriesText:hover{
+
+.subCategoriesText:hover {
     background-color: white;
     cursor: pointer;
 }
@@ -62,48 +65,57 @@ font-weight: bold;
     height: 100%;
     object-fit: cover;
 }
-.gridItems :hover{
+
+.gridItems :hover {
 
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px
 }
-.dataText{
-        height: 50px;
-        font-size: 15px;
-        width: auto;
-        /* white-space: nowrap; */
-        overflow: hidden;
-        text-overflow: ellipsis; 
-        margin-top: 20px;
-        
+
+.dataText {
+    height: 50px;
+    font-size: 15px;
+    width: auto;
+    /* white-space: nowrap; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 20px;
+
 }
-.dataText :hover{
+
+.dataText :hover {
     color: red;
 }
-.appOnlyFlex{
+
+.appOnlyFlex {
     margin: auto;
     width: 90%;
 }
- .phoneIconAppOnlyCard{
+
+.phoneIconAppOnlyCard {
     font-size: 65px;
     margin: auto;
     background-color: gold;
     padding: 10px;
     border-radius: 50%;
- }  
- .footerLowerAd{
+}
+
+.footerLowerAd {
     margin-top: 5px;
     word-spacing: 2px;
     font-size: 12px;
- }
- .footerSection{
-    background-color: rgb(238, 233, 233);
+}
 
- }
- .footerAdIndividualAd{
+.footerSection {
+    background-color: rgb(238, 233, 233);
+  
+}
+
+.footerAdIndividualAd {
     margin-top: 30px;
-   
- }
- .lowerFooterAd{
+
+}
+
+.lowerFooterAd {
     margin: auto;
     margin-bottom: 10px;
- }
+}
