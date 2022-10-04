@@ -50,11 +50,14 @@ import {BsHeart} from "react-icons/bs"
 import {FcGoogle} from "react-icons/fc"
 import {BsCart2} from "react-icons/bs"
 import { AuthContext } from '../Context/AuthContextComponent';
+import { CartContext } from '../Context/CartContext/CartContext';
 
 const Navbar = () => {
 
     const [state,dispatch] = useContext(AuthContext)
     console.log(state)
+    const[cartState , cartDispatch] = useContext(CartContext) 
+    console.log(cartState.cart.length)
   const { isOpen, onOpen, onClose } = useDisclosure()
   const initialRef = React.useRef(null)
   const finalRef = React.useRef(null)
@@ -206,7 +209,7 @@ const Navbar = () => {
             </Flex>
             <Flex marginTop='25px' marginLeft='-10px' alignItems='center' >
                 <BsCart2 size='25px' />
-                <Link to='/cart'><Text marginLeft='10px'>Cart</Text></Link>
+                <Link to='/cart'><Flex><Text marginLeft='10px'><Flex>Cart <Text backgroundColor={'red'} borderRadius='50%' width='20px' padding={'1px'}>{cartState.cart.length}</Text></Flex></Text></Flex></Link>
             </Flex>
     </Flex>  
      

@@ -70,7 +70,6 @@ font-weight: bold;
         height: 50px;
         font-size: 15px;
         width: auto;
-        /* white-space: nowrap; */
         overflow: hidden;
         text-overflow: ellipsis; 
         margin-top: 20px;

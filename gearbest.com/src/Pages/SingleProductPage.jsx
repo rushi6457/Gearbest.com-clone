@@ -6,11 +6,15 @@ import Navbar from "../Components/Navbar.jsx"
 import Footer from "../Components/Footer.jsx"
 import { useState } from 'react';
 import {BsPaypal} from "react-icons/bs"
+import { useContext } from 'react';
+import { CartContext } from '../Context/CartContext/CartContext.jsx';
 const SingleProductPage = () => {
 
     const {id} = useParams()
     const [product,setProduct] = React.useState([])
-    const [count,setCount] = useState(0)
+    const [count,setCount] = useState(1)
+    const [cartState,cartDispatch] = useContext(CartContext)
+    console.log(cartState)
     React.useEffect(()=>{
         
         axios.get(`https://mocker-server.herokuapp.com/all/${id}`)
@@ -83,12 +87,20 @@ const SingleProductPage = () => {
                 <Text marginLeft={'20px'} color={'#f30240'}>Max per order : 100</Text>
                 </Flex>
                 <Flex marginLeft={'-170px'} marginTop={'40px'}>
-                <Link to='/cart'><Button 
+                <Link to='/cart'>
+                <Button 
+               onClick={()=>{
+                cartDispatch({
+                    type:"ADD_TO_CART",
+                    payload:product
+                })
+               }}
                 color={'white'}
                 fontSize={'20px'}
                 marginRight={'20px'} 
                 borderRadius='0px'
-                backgroundColor={'#f30240'}>Add To Cart</Button></Link>
+                backgroundColor={'#f30240'}>Add To Cart</Button>
+                </Link>
                 <Button
                 fontSize={'20px'}
                 color={'#f30240'} 
