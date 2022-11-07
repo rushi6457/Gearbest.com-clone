@@ -1,5 +1,7 @@
+<h2 align='center'>---------- Clone of ----------</h2>
+<h1 align='center' color='yellow' decoration='underline'>Gearbest.com</h1>
 
-# Hello, This is the clone of gearbest.com website
+<h4># Geabest.com is the E-commerce website with wide range of product categories as well as they have customer base all over the world </h4>
 
 ### You can find the deploy link for the project [here](https://gearbest-project-eta.vercel.app/) 
 
@@ -16,7 +18,7 @@
 `Context Api`
 `Chakra UI library`
 
-## *More information and visual representation is given about the project is given below
+## *More information and visual representation about the project is given below
 
 ## This is the home / landing page of the website
 
