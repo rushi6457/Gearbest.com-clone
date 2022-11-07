@@ -1,9 +1,16 @@
 
-# Getting Started with Create React App
+# Hello, This is the clone of gearbest.com website
 
 ### You can find the deploy link for the project [here](https://gearbest-project-eta.vercel.app/) 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Tech-stack used:
+#### React JS
+#### Chakra UI
+#### CSS
+#### Json-server
+#### Swiper
+
+## *More information and visual representation is given about the project is given below
 
 ## This is the home / landing page of the website
 
