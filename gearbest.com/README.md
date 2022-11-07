@@ -9,6 +9,12 @@
 #### CSS
 #### Json-server
 #### Swiper
+#### Heroku
+
+# Key learnings from the project
+`React JS state management`
+`Context Api`
+`Chakra UI library`
 
 ## *More information and visual representation is given about the project is given below
 
